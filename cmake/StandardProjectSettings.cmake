@@ -1,6 +1,11 @@
 # Set a default build type if none was specified
 if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
-  message(STATUS "Setting build type to 'RelWithDebInfo' as none was specified.")
+    message(WARNING
+        "Setting CMAKE_BUILD_TYPE to: RelWithDebInfo, since is not explicitly specified."
+        "CMAKE_BUILD_TYPE possible options: Debug|Release|MinSizeRel|RelWith|DebInfo" 
+        "If you want to chose CMAKE_BUILD_TYPE explicitly then run cmake with: -DCMAKE_BUILD_TYPE=DesiredBuildType "
+    )
+
   set(CMAKE_BUILD_TYPE
       RelWithDebInfo
       CACHE STRING "Choose the type of build." FORCE)
