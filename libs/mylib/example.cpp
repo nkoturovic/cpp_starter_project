@@ -5,4 +5,4 @@ namespace mylib {
 void example_func() {
     fmt::print("Hello from example func\n");
 }
-} // ns mylib
+} // namespace mylib

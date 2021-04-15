@@ -3,6 +3,6 @@
 
 namespace mylib {
 void example_func();
-} // ns mylib
+} // namespace mylib
 
 #endif // EXAMPLE_HPP
