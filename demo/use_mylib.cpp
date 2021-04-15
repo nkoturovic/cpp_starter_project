@@ -3,7 +3,7 @@
 
 int main()
 {
-    fmt::print("Hello world");
+    fmt::print("Hello world\n");
     mylib::example_func();
 
     return 0;
